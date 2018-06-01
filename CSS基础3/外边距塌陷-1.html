@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.father{
+			width: 500px;
+			height: 400px;
+			background:#232323;
+			/*溢出隐藏解决外边距的塌陷问题*/
+			/*overflow:hidden;*/
+
+		}
+
+		.son{
+			width: 200px;
+			height: 200px;
+			background:#eee;
+			/*水平方向没有外边距的塌陷问题*/
+		      margin:30px;
+		
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+			<div class="son"></div>
+    </div>
+</body>
+</html>

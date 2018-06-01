@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{margin:0;}
+	.red,.green,.blue{
+		width: 200px;
+		height: 200px;
+	}
+	   /*浮动脱离标准流*/
+	.red{
+		background:red;
+		float: left;
+	}
+	      /*绿盒子占据浮动后元素的位置*/
+	.green{
+		background-color: green;
+		/*width:300px;
+		height: 300px;*/
+		/*float: left;*/
+
+	}	
+
+	.blue{
+		float:right;
+		background-color: blue;
+	}	
+	span{ 
+          float: left;
+          background:pink;
+          width:700px;
+          height:200px;
+	       }	
+	.black{
+		background:black;
+          width:200px;
+          height:300px;
+
+	}	
+</style>
+
+</head>
+<body>
+	 <div class="red"></div>
+	 <div class="green"></div>
+	 <div class="blue"></div>
+	 <span></span>
+	 <div class="black"></div>
+</body>
+</html>

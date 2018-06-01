@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.one{border:dashed 1px;
+			outline-style: none;
+			 background-color: #C0BFE8;
+
+		}
+		.one:focus{background-color:red;}
+
+		.two{border-bottom:dotted 1px red;
+			 border-top:none;
+			 border-left:none;
+			 border-right:none;
+			 outline-style: none;
+		}
+		.three{border:solid 1px #8D8989;
+				background: url(../css基础2/04-案例/1.jpg) no-repeat right;
+				/*去掉轮廓线，鼠标点击时没有轮廓出现*/
+				outline-style: none;
+			}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<label for="four">用户名:</label> &nbsp; <input type="text" class="one" id="four"> <br><br>
+		<span>邮箱:</span> &nbsp;&nbsp; <input type="text" class="two"> <br><br>
+		<span>搜索一下:</span>  <input type="text" class="three">
+	</form>
+</body>
+</html>
